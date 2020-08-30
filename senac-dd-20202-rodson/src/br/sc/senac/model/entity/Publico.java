@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Publico extends Pessoa {
 	
 	private int idPublico;
-	private boolean vacinado;
+	private boolean voluntario;
 	public Publico() {
 		super();
 		
@@ -14,10 +14,10 @@ public class Publico extends Pessoa {
 		super(idPessoa, nome, dataNascimento, sexo, cpf, avaliacaoPessoa);
 
 	}
-	public Publico(int idPublico, boolean vacinado) {
+	public Publico(int idPublico, boolean voluntario) {
 		super();
 		this.idPublico = idPublico;
-		this.vacinado = vacinado;
+		this.voluntario = voluntario;
 	}
 	public int getIdPublico() {
 		return idPublico;
@@ -25,15 +25,15 @@ public class Publico extends Pessoa {
 	public void setIdPublico(int idPublico) {
 		this.idPublico = idPublico;
 	}
-	public boolean isVacinado() {
-		return vacinado;
+	public boolean isVoluntario() {
+		return voluntario;
 	}
-	public void setVacinado(boolean vacinado) {
-		this.vacinado = vacinado;
+	public void setVacinado(boolean voluntario) {
+		this.voluntario = voluntario;
 	}
 	@Override
 	public String toString() {
-		return "Publico [idPublico=" + idPublico + ", vacinado=" + vacinado + "]";
+		return "Publico [idPublico=" + idPublico + ", voluntario=" + voluntario + "]";
 	}
 
 }

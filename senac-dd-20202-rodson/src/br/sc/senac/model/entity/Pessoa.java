@@ -8,7 +8,6 @@ public abstract class Pessoa {
 	private LocalDate dataNascimento;
 	private String sexo;
 	private String cpf;
-	private int avaliacaoPessoa;
 	
 	public Pessoa() {
 		
@@ -16,14 +15,14 @@ public abstract class Pessoa {
 		
 	}
 
-	public Pessoa(int idPessoa, String nome, LocalDate dataNascimento, String sexo, String cpf, int avaliacaoPessoa) {
+	public Pessoa(int idPessoa, String nome, LocalDate dataNascimento, String sexo, String cpf) {
 		super();
 		this.idPessoa = idPessoa;
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 		this.sexo = sexo;
 		this.cpf = cpf;
-		this.avaliacaoPessoa = avaliacaoPessoa;
+	
 	}
 
 	public int getIdPessoa() {
@@ -66,18 +65,10 @@ public abstract class Pessoa {
 		this.cpf = cpf;
 	}
 
-	public int getAvaliacaoPessoa() {
-		return avaliacaoPessoa;
-	}
-
-	public void setAvaliacaoPessoa(int avaliacaoPessoa) {
-		this.avaliacaoPessoa = avaliacaoPessoa;
-	}
-
 	@Override
 	public String toString() {
 		return "Pessoa [idPessoa=" + idPessoa + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", sexo="
-				+ sexo + ", cpf=" + cpf + ", avaliacaoPessoa=" + avaliacaoPessoa + "]";
+				+ sexo + ", cpf=" + cpf + "]";
 	}
 
 
